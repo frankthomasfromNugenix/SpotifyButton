@@ -13,8 +13,9 @@ namespace SpotifyButton.Services
             Authorize();
         }
 
-        public void AddSong(Song name)
+        public void AddSong(Song newSong)
         {
+
             throw new NotImplementedException();
         }
 
