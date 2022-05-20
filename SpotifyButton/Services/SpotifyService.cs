@@ -1,18 +1,26 @@
-﻿namespace SpotifyButton.Services
+﻿using SpotifyButton.Models;
+
+namespace SpotifyButton.Services
 {
     public class SpotifyService
     {
-        private string _apiKey;
-        public SpotifyService()
+        private readonly SpotifyCredentials cred;
+
+        public SpotifyService(SpotifyCredentials cred)
         {
-            _apiKey = "BLA";
+            this.cred = cred;
+
+            Authorize();
         }
 
-        public string CHANGE(string name)
+        public void AddSong(Song name)
         {
-            string test = "";
+            throw new NotImplementedException();
+        }
 
-            return _apiKey;
+        private void Authorize()
+        {
+            throw new NotImplementedException();
         }
     }
 }
